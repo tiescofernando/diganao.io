@@ -8,7 +8,7 @@ body {
 
 nav {
     background-color: rgba(0, 0, 0, 0.7); /* Fundo da barra de navegação */
-    padding: 10px;
+    padding: 3%;
     text-align: center;
 }
 
@@ -31,6 +31,7 @@ nav ul li a {
 .content {
     display: flex;
     flex-direction: column; /* Coloca os itens em coluna */
+    flex-wrap: wrap;
 }
 
 .image-text {
@@ -73,27 +74,35 @@ nav ul li a {
 }
 
 .interview {
-  border: 2px solid #eead2d;
-  border-radius: 15px;
-  padding: 3px;
-  margin: 20px;
-  box-shadow: 0 3px rgba(0, 0, 0, 1);
+  border: 8px solid #eead2d;
+  border-radius: 3rem;
+  padding:10px;
+  margin: 2px;
+  box-shadow: 0 1.5px rgba(0, 0, 0, 1);
 }
 
-#f1, #f2, #f3, #f4 {
-    font-size: 25px;
+.comentarios{
+  padding:0 2%;
+}
+
+#f1, #f2, #f3, #f4, #f5 {
+    font-size: 2rem;
     font-family: monospace, cursive;
     position: relative;
     display: inline-block;
-    padding: 20px;
+    padding: 2%;
 }
 
- #f5 {
-    font-size: 42px;
-    font-family: monospace, cursive;
-    position: relative;
-    display: inline-block;
-    padding: 20px;
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        background-color: lightgray; /* Muda a cor de fundo em dispositivos móveis */
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .container {
+        width: 95%; /* Aumenta a largura da container em dispositivos móveis */
+    }
 
 
 
