@@ -142,13 +142,10 @@ b, strong {
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     body {
-        background-color: lightgray; /* Muda a cor de fundo em dispositivos móveis */
-        font-size: 14px; /* Reduz o tamanho da fonte */
+        width: 100%;
     }
 
-    .container {
-        width: 95%; /* Aumenta a largura da container em dispositivos móveis */
-    }
+ 
 
 
 
