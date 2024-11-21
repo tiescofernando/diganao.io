@@ -145,11 +145,11 @@ b, strong {
         width: 100%;
         flex-direction: column;
     }
-contente{
+.contente{
    width: 100%;
    flex-direction: column;
 }
-Interview {
+.Interview {
    width:100%
    flex-direction: column;
  
