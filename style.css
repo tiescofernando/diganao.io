@@ -11,7 +11,7 @@ body {
 
 nav {
     background-color: rgba(0, 0, 0, 0.9); /* Fundo da barra de navegação */
-    padding: 1.4%;
+    padding: 1.7
     text-align: center;
     position: fixed;
     top: 0;
@@ -27,7 +27,7 @@ nav ul {
 
 nav ul li {
     display: inline; /* Exibe os itens da lista em linha */
-    margin: 0 150px; /* Espaçamento entre os itens */
+    margin: 0 80px; /* Espaçamento entre os itens */
 }
 
 nav ul li a {
@@ -36,12 +36,25 @@ nav ul li a {
     font-size: 18px; /* Tamanho da fonte */
 }
 
+li{
+  list-style-type: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.text{
+  display: block;
+  font-weight: bold;
+  font-size: 27px;
+}
+
 .list{
   font-family: 'Roboto', Tahoma, Sans-Serif;
   font-size: 26px;
   font-style: normal;
-  
 }
+
+
 
 .content {
     padding: 25px;
@@ -51,16 +64,20 @@ nav ul li a {
 }
 
 .image-text {
+    max-width: 100%;
+    height: auto;
     display: flex;
     align-items: center; /* Alinha verticalmente o conteúdo */
-    margin: 6px 0; /* Espaçamento entre os conjuntos de imagem e texto */
+    margin: 3px 0; /* Espaçamento entre os conjuntos de imagem e texto */
 }
 
 .image-text.left {
+    height: auto;
     flex-direction: row;/*Texto à direita, imagem à esquerda*/
 }
 
 .image-text.right {
+    height: auto;
     flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
 }
 
@@ -92,11 +109,10 @@ nav ul li a {
 .interview {
   border: 8px solid #eead2d;
   border-radius: 1.6rem;
-  padding:10px;
-  margin: 2px;
+  padding:8%;
+  margin: 1em;
   box-shadow: 0 1.5px rgba(0, 0, 0, 1);
 }
-
 .comentarios{
   padding:0 2%;
 }
@@ -104,6 +120,19 @@ nav ul li a {
 b, strong {
   font-size: 24px;
     font-weight: bolder;
+}
+
+.icon{
+  font-family: 'Lato', Arial, Sans-Serif;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 30px;
+  background-color: black;
+  border-radius: 100%;
+  border: 2px solid;
+  display: inline-block;
+  padding: 15;
+  width: 15%;
 }
 
 #f1, #f2, #f3, #f4, #f5 {
@@ -142,17 +171,13 @@ b, strong {
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     body {
-        width: 100%;
-        flex-direction: column;
+        width: 95%;
+        /* Reduz o tamanho da fonte */
     }
-.contente{
-   width: 100%;
-   flex-direction: column;
-}
-.Interview {
-   width:100%
-   flex-direction: column;
- 
+
+    .container {
+        width: 95%; /* Aumenta a largura da container em dispositivos móveis */
+    }
 
 
 
