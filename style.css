@@ -129,10 +129,10 @@ b, strong {
   font-size: 30px;
   background-color: black;
   border-radius: 100%;
-  border: 2px solid;
+  border: 0 solid;
   display: inline-block;
   padding: 15;
-  width: 15%;
+  width: 45px;
 }
 
 #f1, #f2, #f3, #f4, #f5 {
