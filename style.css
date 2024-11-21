@@ -143,8 +143,15 @@ b, strong {
 @media (max-width: 768px) {
     body {
         width: 100%;
+        flex-direction: column;
     }
-
+contente{
+   width: 100%;
+   flex-direction: column;
+}
+Interview {
+   width:100%
+   flex-direction: column;
  
 
 
