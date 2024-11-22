@@ -4,9 +4,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white; /* Para garantir que o texto seja legível sobre o fundo escuro */
-    padding: 0;
-    padding-top: 60px;
-  
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align:left;
 }
 
 nav {
@@ -42,6 +44,15 @@ li{
   text-align: -webkit-match-parent;
 }
 
+pre{
+  width: 90%;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 0;
+  padding-top: 12px;
+}
+
 .text{
   display: block;
   font-weight: bold;
@@ -54,6 +65,13 @@ li{
   font-style: normal;
 }
 
+.list li{
+  list-style-type: none;
+  display: list-item;
+  text-align: center;
+  line-height: 2; 
+  text-decoration:5px underline;
+}
 
 
 .content {
@@ -64,11 +82,12 @@ li{
 }
 
 .image-text {
+    position: relative;
     max-width: 100%;
     height: auto;
     display: flex;
     align-items: center; /* Alinha verticalmente o conteúdo */
-    margin: 3px 0; /* Espaçamento entre os conjuntos de imagem e texto */
+    margin: 3px; /* Espaçamento entre os conjuntos de imagem e texto */
 }
 
 .image-text.left {
@@ -106,13 +125,23 @@ li{
     opacity: 15; /* Aumenta a opacidade do texto ao passar o mouse na imagem */
 }
 
-.interview {/*Borda do campo entrevista*/
+.interview {/*Borda laranja em volta do video e da entrevista.*/
   border: 8px solid #eead2d;
   border-radius: 1.6rem;
   padding:8%;
   margin: 1em;
   box-shadow: 0 1.5px rgba(0, 0, 0, 1);
 }
+
+.history{
+  width:100%;
+  text-align:justify;
+  font-size: 20px;
+  line-height:2em;
+  padding: 8px;
+  margin: 12px;
+}
+
 .comentarios{
   padding:0 2%;
 }
@@ -123,24 +152,25 @@ b, strong {
 }
 
 .icon{/*Borda do circulo em volta do numeros*/
-  font-family: 'Lato', Arial, Sans-Serif;
-  font-style: bold;
-  font-weight: 400;
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 35px;
   background-color: black;
   border-radius: 100%;
   border: 0 solid;
-  display: inline-block;
-  padding: 15;
-  width: 40px;
+  width: 50px;
+  height: 50px;
+  text-align:center;
 }
 
 #f1, #f2, #f3, #f4, #f5 {
-    font-size: 2rem;
-    font-family: monospace, cursive;
-    position: relative;
-    display: inline-block;
-    padding: 2%;
+    font-size: 32px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    position: absolute;
+    left: auto;
+    top: 150px;
+    max-width: 100%;
+    width: 100%;
+    font-weight: bold;
     
 }
 
@@ -178,6 +208,7 @@ b, strong {
     .container {
         width: 95%; /* Aumenta a largura da container em dispositivos móveis */
     }
+
 
 
 
