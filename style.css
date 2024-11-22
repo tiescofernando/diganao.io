@@ -171,7 +171,7 @@ b, strong {
     max-width: 100%;
     width: 100%;
     font-weight: bold;
-    
+    text-shadow: 1px, 1px, 1px, black;
 }
 
 #tip{
