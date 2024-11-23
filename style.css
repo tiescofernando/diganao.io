@@ -167,76 +167,84 @@ li{
   font-weight: bold;
   font-size: 27px;
 }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  nav ul li {
+
+@media (max-width: 450px) {
+
+ nav ul li {
     display: inline; /* Exibe os itens da lista em linha */
-    margin: 0 auto; /* Espaçamento entre os itens */
-}
-
-nav ul li a {
-    color: white; /* Cor do texto do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-size: 20px;
-}
-
-iframe{
-  width: 400;
-  height: 300;
-} 
-}
-
-@media (min-width: 450px) {
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  nav ul li {
-    display: inline; /* Exibe os itens da lista em linha */
-    margin: 0 auto; /* Espaçamento entre os itens */
+    margin: 0 10px; /* Espaçamento entre os itens */
 }
 
 nav ul li a {
     color: white; /* Cor do texto do link */
     text-decoration: none; /* Remove o sublinhado */
     font-size: 15px;
-}
-
-iframe{
-  width: 300;
-  height: 1500;
-} 
-
-}
-
-@media (min-width: 360px) {
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
+    font-weight: bold;
   }
-  nav ul li {
-    display: inline; /* Exibe os itens da lista em linha */
-    margin: 0 auto; /* Espaçamento entre os itens */
-}
-
-nav ul li a {
-    color: white; /* Cor do texto do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-size: 10px;
-}
 
 iframe{
-  width: 300;
-  height: 150;
-} 
+  width:300px;
+  height:150px;
 }
 
+.list li{
+  margin:0 auto;
+  padding:0;
+
+}
+.image-text {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    margin: 3px; /* Espaçamento entre os conjuntos de imagem e texto */
+}
+
+.image-text img {
+    width: 100px; /* Tamanho fixo para as imagens */
+    height: 100px; /* Tamanho fixo para as imagens */
+    border-radius: 20px; /* Bordas arredondadas */
+    margin: 4px; /* Espaçamento entre a imagem e o texto */
+}
+.image-text.left {
+    height: auto;
+    flex-direction: row;/*Texto à direita, imagem à esquerda*/
+}
+
+.image-text.right {
+    height: auto;
+    flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
+}
+
+.text-left{/*Vai estilizar o texto que esta junto a imagem da esquerda*/
+  font-family: cursive, tahoma, Sans-Serif;
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+.text-right{/*Vai estilizar o texto que esta junto a imagem da direita*/
+  font-family: cursive, tahoma, Sans-Serif;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+.list-nao{
+  font-family: 'Roboto', Tahoma, Sans-Serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+}
 
 
 
