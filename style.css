@@ -4,7 +4,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white; /* Para garantir que o texto seja legível sobre o fundo escuro */
-    margin: 0;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -13,7 +12,7 @@ body {
 
 nav {
     background-color: rgba(0, 0, 0, 0.9); /* Fundo da barra de navegação */
-    padding: 1.7
+    padding: 1.7;
     text-align: center;
     position: fixed;
     top: 0;
@@ -59,7 +58,7 @@ pre{
   font-size: 27px;
 }
 
-.list{
+.list-nao{
   font-family: 'Roboto', Tahoma, Sans-Serif;
   font-size: 26px;
   font-style: normal;
