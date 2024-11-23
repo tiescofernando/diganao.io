@@ -62,6 +62,11 @@ li{
     flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
 }
 
+.image-text img:hover{
+  box-shadow: 3px 4px 20px white;
+  transform:scale(1.02);
+}
+
 .text-left{/*Vai estilizar o texto que esta junto a imagem da esquerda*/
   font-family: cursive, tahoma, Sans-Serif;
   font-size: 32px;
@@ -125,8 +130,7 @@ li{
 .icon{/*Borda do circulo em volta do numeros*/
   font-weight: bold;
   font-size: 35px;
-  background-color: black;
-  border-radius: 100%;
+  background: linear-gradient(137deg, rgb(249 238 246 / 94%) 15%, rgb(187 3 96 / 55%) 35%, rgb(14 14 14) 100%);  border-radius: 100%;
   border: 0 solid;
   width: 50px;
   height: 50px;
