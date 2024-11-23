@@ -1,18 +1,13 @@
 body {
-    background: rgb(2, 0, 36);
     background: linear-gradient(137deg, rgba(226, 71, 179, 0.94) 15%, rgba(173, 87, 13, 1) 35%, rgba(197, 46, 65, 1) 100%);
-    margin: 0;
     font-family: Arial, sans-serif;
     color: white; /* Para garantir que o texto seja legível sobre o fundo escuro */
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align:left;
+    margin: 0;
 }
 
 nav {
     background-color: rgba(0, 0, 0, 0.9); /* Fundo da barra de navegação */
-    padding: 1.7;
+    padding: 1.7
     text-align: center;
     position: fixed;
     top: 0;
@@ -43,52 +38,20 @@ li{
   text-align: -webkit-match-parent;
 }
 
-pre{
-  width: 90%;
-  text-align: justify;
-  font-size: 20px;
-  line-height: 25px;
-  padding: 0;
-  padding-top: 12px;
-}
-
-.text{
-  display: block;
-  font-weight: bold;
-  font-size: 27px;
-}
-
-.list-nao{
-  font-family: 'Roboto', Tahoma, Sans-Serif;
-  font-size: 26px;
-  font-style: normal;
-}
-
-.list li{
-  list-style-type: none;
-  display: list-item;
-  text-align: center;
-  line-height: 2; 
-  text-decoration:5px underline;
-}
-
-
-.content {
-    padding: 25px;
-    display: flex;
-    flex-direction: column; /* Coloca os itens em coluna */
-    flex-wrap: wrap;
-}
-
 .image-text {
     position: relative;
     max-width: 100%;
-    height: auto;
     display: flex;
     align-items: center; /* Alinha verticalmente o conteúdo */
     margin: 3px; /* Espaçamento entre os conjuntos de imagem e texto */
 }
 
+.image-text img {
+    width: 250px; /* Tamanho fixo para as imagens */
+    height: 250px; /* Tamanho fixo para as imagens */
+    border-radius: 20px; /* Bordas arredondadas */
+    margin: 4px; /* Espaçamento entre a imagem e o texto */
+}
 .image-text.left {
     height: auto;
     flex-direction: row;/*Texto à direita, imagem à esquerda*/
@@ -99,29 +62,24 @@ pre{
     flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
 }
 
-.image-text img {
-    width: 250px; /* Tamanho fixo para as imagens */
-    height: 250px; /* Tamanho fixo para as imagens */
-    border-radius: 20px; /* Bordas arredondadas */
-    margin: 4px; /* Espaçamento entre a imagem e o texto */
+.text-left{/*Vai estilizar o texto que esta junto a imagem da esquerda*/
+  font-family: cursive, tahoma, Sans-Serif;
+  font-size: 32px;
+  position: absolute;
+  left: 110px;
+  top: 150px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
 }
 
-.image-text img:hover {
-    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra ao passar o mouse */
-}
-
-.image-text figcaption {
-    opacity: 0.8; /* Opacidade inicial do texto */
-    transition: opacity 0.9s ease; /* Transição suave para a opacidade */
-    position: relative;
-    font-size: 35px; /* Aumenta o tamanho da fonte */
-    margin-left: 25px; /* Espaçamento entre a imagem e o texto */
-    
-}
-
-.image-text img:hover + figcaption {
-    opacity: 15; /* Aumenta a opacidade do texto ao passar o mouse na imagem */
+.text-right{/*Vai estilizar o texto que esta junto a imagem da direita*/
+  font-family: cursive, tahoma, Sans-Serif;
+  font-size: 32px;
+  position: absolute;
+  right: 120px;
+  top: 150px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
 }
 
 .interview {/*Borda laranja em volta do video e da entrevista.*/
@@ -133,21 +91,35 @@ pre{
 }
 
 .history{
-  width:100%;
-  text-align:justify;
-  font-size: 20px;
-  line-height:2em;
-  padding: 8px;
-  margin: 12px;
+  text-indent:40px;
+  text-align: justify;
+  margin: 1em;
+ }
+ 
+.list-nao{
+  font-family: 'Roboto', Tahoma, Sans-Serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.2;
 }
 
-.comentarios{
-  padding:0 2%;
+#tip{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 55px;
+  margin: 0 auto;
+  position: relative;
 }
 
-b, strong {
-  font-size: 24px;
-    font-weight: bolder;
+#txt{
+  font-family: cursive, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.3;
+  margin: 0 auto;
+  max-width: 530px;
 }
 
 .icon{/*Borda do circulo em volta do numeros*/
@@ -161,56 +133,36 @@ b, strong {
   text-align:center;
 }
 
-#f1, #f2, #f3, #f4, #f5 {
-    font-size: 32px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    position: absolute;
-    left: auto;
-    top: 150px;
-    max-width: 100%;
-    width: 100%;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+li{
+  list-style-type: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
-#tip{
-  text-align: center;
-  font-family: 'Lato'. Arial, Sans-Serif;
-  font-weight: 900;
-  font-size: 44px;
-  margin: 0 auto;
-  max-width: 1.4;
-  position: relative;
-}
-
-#txt{
-  font-family: cursive, Tahoma, Sans-Serif;
-  font-weight: 400;
+.list{
+  font-family: Times New Roman, Times, Sans-Serif	;
+  font-size: 20px;
   font-style: normal;
-  font-size: 14;
-  text-align: center;
-  line-height: 1.3;
-  margin: 0 auto;
-  max-width: 230px;
-  padding-top: 20px;
-  position: relative;
-  z-index: 2;
+  line-height: 1.8;
+  text-decoration: underline;
 }
 
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
-    body {
-        width: 95%;
-        /* Reduz o tamanho da fonte */
-    }
+.list li{
+  margin-left: 320px;
+}
 
-    .container {
-        width: 95%; /* Aumenta a largura da container em dispositivos móveis */
-    }
+.content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    flex-wrap: wrap;
+}
 
-
-
-
+.text{
+  display: block;
+  font-weight: bold;
+  font-size: 27px;
+}
 
 
 
