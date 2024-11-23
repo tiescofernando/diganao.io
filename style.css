@@ -7,7 +7,7 @@ body {
 
 nav {
     background-color: rgba(0, 0, 0, 0.9); /* Fundo da barra de navegação */
-    padding: 1.7
+    padding: 1.7;
     text-align: center;
     position: fixed;
     top: 0;
