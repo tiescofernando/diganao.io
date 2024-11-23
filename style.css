@@ -167,6 +167,75 @@ li{
   font-weight: bold;
   font-size: 27px;
 }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 auto; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 20px;
+}
+
+iframe{
+  width: 400;
+  height: 300;
+} 
+}
+
+@media (min-width: 450px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 auto; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 15px;
+}
+
+iframe{
+  width: 300;
+  height: 1500;
+} 
+
+}
+
+@media (min-width: 360px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 auto; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 10px;
+}
+
+iframe{
+  width: 300;
+  height: 150;
+} 
+}
 
 
 
