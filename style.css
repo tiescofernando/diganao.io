@@ -54,12 +54,12 @@ li{
     margin: 4px; /* Espaçamento entre a imagem e o texto */
 }
 .image-text.left {
-    height: auto;
+    height: 325px;
     flex-direction: row;/*Texto à direita, imagem à esquerda*/
 }
 
 .image-text.right {
-    height: auto;
+    height: 150px;
     flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
 }
 
@@ -83,7 +83,7 @@ li{
   font-size: 32px;
   position: absolute;
   right: 120px;
-  top: 150px;
+  top: 50px;
   font-weight: bold;
   text-shadow: 2px 2px 1px white;
 }
@@ -139,16 +139,16 @@ li{
 }
 
 li{
-  list-style-type: none;
+  list-style-type: auto;
   display: list-item;
   text-align: -webkit-match-parent;
 }
 
 .list{
   font-family: Times New Roman, Times, Sans-Serif	;
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
-  line-height: 1.8;
+  line-height: 1.5;
   text-decoration: underline;
 }
 
@@ -166,7 +166,7 @@ li{
 .text{
   display: block;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 25px;
 }
 
 @media (max-width: 750px) {
@@ -179,7 +179,7 @@ li{
 nav ul li a {
     color: white; /* Cor do texto do link */
     text-decoration: none; /* Remove o sublinhado */
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
   }
 
@@ -208,33 +208,34 @@ iframe{
     margin: 4px; /* Espaçamento entre a imagem e o texto */
 }
 .image-text.left {
+    top: 15px;
     height: auto;
     flex-direction: row;/*Texto à direita, imagem à esquerda*/
 }
 
 .image-text.right {
-    height: auto;
+    height: 45px;
     flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
 }
 
 .text-left{/*Vai estilizar o texto que esta junto a imagem da esquerda*/
   font-family: cursive, tahoma, Sans-Serif;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   left: 10px;
   top: 50px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 2px 1px #ece2e2;
 }
 
 .text-right{/*Vai estilizar o texto que esta junto a imagem da direita*/
   font-family: cursive, tahoma, Sans-Serif;
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
   right: 20px;
-  top: 50px;
+  top: 10px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 1px #f7f1f1;
 }
 
 .list-nao{
@@ -243,6 +244,12 @@ iframe{
   font-style: normal;
   font-weight: bold;
   line-height: 1.2;
+}
+
+.text{
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 }
