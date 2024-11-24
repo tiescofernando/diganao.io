@@ -1,19 +1,18 @@
 body {
-    background: linear-gradient(137deg, rgba(226, 71, 179, 0.94) 15%, rgba(173, 87, 13, 1) 35%, rgba(197, 46, 65, 1) 100%);
     font-family: Arial, sans-serif;
-    color: white; /* Para garantir que o texto seja legível sobre o fundo escuro */
+    color: #110e0e; /* Para garantir que o texto seja legível sobre o fundo escuro */
     margin: 0;
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo da barra de navegação */
+    background: linear-gradient(90deg, rgb(2 0 36 / 83%) 10%, rgb(226 71 179 / 89%) 30%, rgb(0 212 255 / 84%) 90%); /* Fundo da barra de navegação */
     padding: 1.7;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 nav ul {
@@ -23,10 +22,12 @@ nav ul {
 
 nav ul li {
     display: inline; /* Exibe os itens da lista em linha */
-    margin: 0 80px; /* Espaçamento entre os itens */
+    margin: 0 65px; /* Espaçamento entre os itens */
 }
 
 nav ul li a {
+    font-weight: bold;
+    text-shadow: 1px 1px black;
     color: white; /* Cor do texto do link */
     text-decoration: none; /* Remove o sublinhado */
     font-size: 18px; /* Tamanho da fonte */
@@ -63,7 +64,7 @@ li{
 }
 
 .image-text img:hover{
-  box-shadow: 3px 4px 20px white;
+  box-shadow: 13px 9px 20px #9325257e;
   transform:scale(1.02);
 }
 
@@ -74,7 +75,7 @@ li{
   left: 110px;
   top: 150px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 1px white;
 }
 
 .text-right{/*Vai estilizar o texto que esta junto a imagem da direita*/
@@ -84,11 +85,11 @@ li{
   right: 120px;
   top: 150px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 1px white;
 }
 
 .interview {/*Borda laranja em volta do video e da entrevista.*/
-  border: 8px solid #eead2d;
+  border: 8px solid #d72dee96;
   border-radius: 1.6rem;
   padding:8%;
   margin: 1em;
@@ -183,8 +184,8 @@ nav ul li a {
   }
 
 iframe{
-  width:275px;
-  height:140px;
+  width:300px;
+  height:150px;
 }
 
 .list li{
