@@ -168,7 +168,7 @@ li{
   font-size: 27px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
 
  nav ul li {
     display: inline; /* Exibe os itens da lista em linha */
