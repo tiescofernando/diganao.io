@@ -102,7 +102,8 @@ li{
   margin: 1em;
  }
  
-.list-nao{
+.list-nao li{
+  list-style-type: none;
   font-family: 'Roboto', Tahoma, Sans-Serif;
   font-size: 26px;
   font-style: normal;
@@ -201,8 +202,8 @@ nav ul li a {
   }
 
 iframe{
-  width:300px;
-  height:150px;
+  width:200px;
+  height:100px;
 }
 
 .list li{
@@ -255,12 +256,14 @@ iframe{
   text-shadow: 2px 2px 1px #f7f1f1;
 }
 
-.list-nao{
+.list-nao li{
+  display:block;
+  list-style-type: none;
   font-family: 'Roboto', Tahoma, Sans-Serif;
-  font-size: 12px;
-  font-style: normal;
+  font-size: 10px;
   font-weight: bold;
   line-height: 1.2;
+  
 }
 
 .text{
@@ -268,6 +271,31 @@ iframe{
   font-weight: bold;
   font-size: 17px;
 }
+
+.container{
+ margin: 1px auto;
+ padding: 0;
+}
+
+#tip{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 35px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#txt{
+  text-align: center;
+  font-family: cursive, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.3;
+  margin: 0 auto;
+  max-width: 530px;
+}
+
 
 }
 
