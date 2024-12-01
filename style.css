@@ -1,43 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #110e0e; /* Para garantir que o texto seja legível sobre o fundo escuro */
-    margin: 0;
-}
 
-nav {
-    background: linear-gradient(90deg, rgb(2 0 36 / 83%) 10%, rgb(226 71 179 / 89%) 30%, rgb(0 212 255 / 84%) 90%); /* Fundo da barra de navegação */
-    padding: 1.7;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10000;
-}
 
 nav ul {
+    margin: .21em 0 -.21em;
     list-style-type: none; /* Remove os marcadores da lista */
     padding: 0;
+    font-family: "Cooper Hewitt","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
 }
 
-nav ul li {
+.menu ul li {
     display: inline; /* Exibe os itens da lista em linha */
     margin: 0 65px; /* Espaçamento entre os itens */
 }
 
-nav ul li a {
+.menu ul li a {
     font-weight: bold;
-    text-shadow: 1px 1px black;
     color: white; /* Cor do texto do link */
     text-decoration: none; /* Remove o sublinhado */
     font-size: 18px; /* Tamanho da fonte */
 }
 
-li{
-  list-style-type: none;
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
 
 .image-text {
     position: relative;
@@ -89,7 +71,7 @@ li{
 }
 
 .interview {/*Borda laranja em volta do video e da entrevista.*/
-  border: 8px solid #d72dee96;
+  border: 8px solid #abbec3;
   border-radius: 1.6rem;
   padding:8%;
   margin: 1em;
@@ -136,8 +118,7 @@ li{
 .icon{/*Borda do circulo em volta do numeros*/
   font-weight: bold;
   font-size: 35px;
-  background: linear-gradient(137deg, rgb(249 238 246 / 94%) 15%, rgb(187 3 96 / 55%) 35%, rgb(14 14 14) 100%);  border-radius: 100%;
-  border: 0 solid;
+  border: 3 solid;
   width: 50px;
   height: 50px;
   text-align:center;
@@ -184,7 +165,6 @@ li{
   font-size: 59px;
   
 }
-
 
 /*Está area é da estilização do mobile*/
 @media (max-width: 750px) {
@@ -295,9 +275,4 @@ iframe{
   margin: 0 auto;
   max-width: 530px;
 }
-
-
-}
-
-
 
