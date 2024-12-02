@@ -1,278 +1,228 @@
-
-
-nav ul {
-    margin: .21em 0 -.21em;
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0;
-    font-family: "Cooper Hewitt","Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
+:root{
+  --font-tema: 36px; 
+  --font01:"Cooper Hewitt", "Helvitica Neue", "Arial", "Sans-serif"; 
+  --font02: font-weight: 700px; 
+  --font03: uppercase;
 }
 
-.menu ul li {
-    display: inline; /* Exibe os itens da lista em linha */
-    margin: 0 65px; /* Espaçamento entre os itens */
+* {
+  max-width: 1000px;
 }
 
-.menu ul li a {
+html, body{
+    width: 95%;
+    height: 100vh;
+    padding: 10px;
+    margin: 50px;
+}
+
+body{
+  font: Arial, Sans-serif;
+}
+
+header img{
+    width: 123px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 15px;
+}
+
+#txt{
+  font-size: var(--font-tema);
+  font-family: var(--font01);
+  font-weight: var(--font02);
+  text-transform: var(--font03);
+  color: black;
+  position: relative;
+  left: 105px;
+  margin: 10px;
+}
+
+header li{
+  list-style: none;
+  display: inline-block;
+  gap: 15px;
+  letter-spacing: 1px;
+  
+}
+
+header a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #d7b221;
+  text-transform: uppercase;
+  font-family: "Archivo Narrow",sans-serif;
+  display: relative;
+  padding: 10px 20px 0 30px;  
+}
+
+header a:hover{
+  color: #999;
+}
+
+.slidesshow-content{
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 300px;
+}
+
+.slides {
+  display: none; /* Esconde todas as imagens por padrão */
+  position: absolute; /* Posiciona as imagens uma em cima da outra */
+  width: 100%; /* Largura total do contêiner */
+  height: auto; /* Mantém a proporção da imagem */ 
+  
+}
+
+img {
+  width: 400px; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
+  height: 300px; /* Mantém a proporção da imagem */
+  height: auto;
+  border-radius: 10px;
+}
+
+.active {
+  display: block; /* Mostra a imagem ativa */
+}
+
+.text-slides{
+    font-family: Times, Optima, Verdana, sans-serif	;
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    bottom: 20px; /* Distância do fundo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para o centro */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.list-nao{
     font-weight: bold;
-    color: white; /* Cor do texto do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-size: 18px; /* Tamanho da fonte */
-}
-
-
-.image-text {
-    position: relative;
-    max-width: 100%;
-    display: flex;
-    align-items: center; /* Alinha verticalmente o conteúdo */
-    margin: 3px; /* Espaçamento entre os conjuntos de imagem e texto */
-}
-
-.image-text img {
-    width: 250px; /* Tamanho fixo para as imagens */
-    height: 250px; /* Tamanho fixo para as imagens */
-    border-radius: 20px; /* Bordas arredondadas */
-    margin: 4px; /* Espaçamento entre a imagem e o texto */
-}
-.image-text.left {
-    height: 325px;
-    flex-direction: row;/*Texto à direita, imagem à esquerda*/
-}
-
-.image-text.right {
-    height: 150px;
-    flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
-}
-
-.image-text img:hover{
-  box-shadow: 13px 9px 20px #9325257e;
-  transform:scale(1.02);
-}
-
-.text-left{/*Vai estilizar o texto que esta junto a imagem da esquerda*/
-  font-family: cursive, tahoma, Sans-Serif;
-  font-size: 32px;
-  position: absolute;
-  left: 110px;
-  top: 150px;
-  font-weight: bold;
-  text-shadow: 2px 2px 1px white;
-}
-
-.text-right{/*Vai estilizar o texto que esta junto a imagem da direita*/
-  font-family: cursive, tahoma, Sans-Serif;
-  font-size: 32px;
-  position: absolute;
-  right: 120px;
-  top: 50px;
-  font-weight: bold;
-  text-shadow: 2px 2px 1px white;
-}
-
-.interview {/*Borda laranja em volta do video e da entrevista.*/
-  border: 8px solid #abbec3;
-  border-radius: 1.6rem;
-  padding:8%;
-  margin: 1em;
-  box-shadow: 0 1.5px rgba(0, 0, 0, 1);
-}
-
-.history{
-  text-indent:40px;
-  text-align: justify;
-  margin: 1em;
- }
- 
-.list-nao li{
-  list-style-type: none;
-  font-family: 'Roboto', Tahoma, Sans-Serif;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 2.2;
+    list-style: none;
+    margin: 0 62px;
 }
 
 #tip{
   text-align: center;
-  text-decoration: underline;
-  font-size: 50px;
+}
+
+
+.container-rodape{
+  font-size: 14px;
+  display: relative;
+  padding: 25px;
+  margin: 15px;
+}
+
+.container-rodape img{
+  display: flex;
+  align-items: center;
+  justify-items: center;
   margin: 0 auto;
-  position: relative;
+  padding: 20px;
 }
 
-#txt{
-  font-family: cursive, Tahoma, Sans-Serif;
-  font-style: normal;
-  font-size: 30px;
-  text-align: center;
-  line-height: 1.3;
-  margin: 0 auto;
-  max-width: 530px;
-}
-
-.tipos{
-  padding:50px;
-}
-
-.icon{/*Borda do circulo em volta do numeros*/
-  font-weight: bold;
-  font-size: 35px;
-  border: 3 solid;
-  width: 50px;
-  height: 50px;
-  text-align:center;
-}
-
-li{
-  list-style-type: auto;
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-.list{
-  font-family: Times New Roman, Times, Sans-Serif	;
-  font-size: 17px;
-  font-style: normal;
-  line-height: 1.5;
-  text-decoration: underline;
-}
-
-.list li{
-  margin-left: 310px;
-}
-
-.content {
-    padding: 25px;
-    display: flex;
-    flex-direction: column; /* Coloca os itens em coluna */
-    flex-wrap: wrap;
-}
-
-.text{
-  display: block;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.container{
-  margin: 50px;;
-}
-
-
-.central{
-  margin: 0 px;
-  font-size: 59px;
   
+footer{
+  text-align: center;
 }
 
-/*Está area é da estilização do mobile*/
 @media (max-width: 750px) {
+    * {
+        max-width: 100%; /* Ajusta a largura máxima de todos os elementos para 100% */
+    }
 
- nav ul li {
-    display: inline; /* Exibe os itens da lista em linha */
-    margin: 0 10px; /* Espaçamento entre os itens */
+    html, body {
+        width: 90%; /* Define a largura do body para 100% */
+        padding: 5px; /* Reduz o padding */
+        margin: 20px; /* Reduz a margem */
+    }
+
+    header img {
+        width: 100px; /* Reduz a largura da imagem do cabeçalho */
+        height: auto; /* Mantém a proporção da imagem */
+        margin: 10px; /* Ajusta a margem */
+    }
+
+    #txt {
+        font-size: 16px; /* Diminui o tamanho da fonte */
+        left: 50px; /* Ajusta a posição do texto */
+        margin: 5px; /* Reduz a margem */
+    }
+
+    header li {
+        display: block; /* Altera para exibição em bloco para empilhar os itens */
+        margin-bottom: 10px; /* Adiciona espaço entre os itens */
+    }
+
+    header a {
+        padding: 5px 5px; /* Ajusta o preenchimento dos links */
+        font-size: 10px;
+      
+    }
+    
+.slidesshow-content{
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 300px;
 }
 
-nav ul li a {
-    color: white; /* Cor do texto do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-size: 13px;
-    font-weight: bold;
-  }
-
-iframe{
-  width:200px;
-  height:100px;
-}
-
-.list li{
-  margin:0 auto;
-  padding:0;
-
-}
-.image-text {
-    position: relative;
-    max-width: 100%;
-    display: flex;
-    align-items: center; /* Alinha verticalmente o conteúdo */
-    margin: 3px; /* Espaçamento entre os conjuntos de imagem e texto */
-}
-
-.image-text img {
-    width: 100px; /* Tamanho fixo para as imagens */
-    height: 100px; /* Tamanho fixo para as imagens */
-    border-radius: 20px; /* Bordas arredondadas */
-    margin: 4px; /* Espaçamento entre a imagem e o texto */
-}
-.image-text.left {
-    top: 15px;
-    height: auto;
-    flex-direction: row;/*Texto à direita, imagem à esquerda*/
-}
-
-.image-text.right {
-    height: 45px;
-    flex-direction: row-reverse; /* Texto à esquerda, imagem à direita */
-}
-
-.text-left{/*Vai estilizar o texto que esta junto a imagem da esquerda*/
-  font-family: cursive, tahoma, Sans-Serif;
-  font-size: 18px;
-  position: absolute;
-  left: 10px;
-  top: 50px;
-  font-weight: bold;
-  text-shadow: 1px 2px 1px #ece2e2;
-}
-
-.text-right{/*Vai estilizar o texto que esta junto a imagem da direita*/
-  font-family: cursive, tahoma, Sans-Serif;
-  font-size: 17px;
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  font-weight: bold;
-  text-shadow: 2px 2px 1px #f7f1f1;
-}
-
-.list-nao li{
-  display:block;
-  list-style-type: none;
-  font-family: 'Roboto', Tahoma, Sans-Serif;
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1.2;
+.slides {
+  display: block; /* Esconde todas as imagens por padrão */
+  position: absolute; /* Posiciona as imagens uma em cima da outra */
+  width: 100%; /* Largura total do contêiner */
+  height: auto; /* Mantém a proporção da imagem */ 
   
 }
 
-.text{
-  display: block;
-  font-weight: bold;
-  font-size: 17px;
+img {
+  width: 300px; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
+  height: 250px; /* Mantém a proporção da imagem */
+  height: auto;
+  border-radius: 10px;
 }
 
-.container{
- margin: 1px auto;
- padding: 0;
+.active {
+  display: absolute; /* Mostra a imagem ativa */
 }
 
-#tip{
-  text-align: center;
-  text-decoration: underline;
-  font-size: 35px;
-  margin: 0 auto;
-  position: relative;
+.text-slides{
+    font-family: Times, Optima, Verdana, sans-serif	;
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    bottom: 20px; /* Distância do fundo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para o centro */
+    color: white; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
-#txt{
-  text-align: center;
-  font-family: cursive, Tahoma, Sans-Serif;
-  font-style: normal;
-  font-size: 20px;
-  text-align: center;
-  line-height: 1.3;
-  margin: 0 auto;
-  max-width: 530px;
+    .container-rodape {
+        font-size: 12px; /* Diminui o tamanho da fonte do rodapé */
+        padding: 15px; /* Reduz o preenchimento */
+    }
+    
+    iframe{
+      width: 350px;
+      height: 200px;
+    }
 }
 
